@@ -2,6 +2,8 @@ package com.example.TMSAndroid;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,16 +39,35 @@ public class LoginActivity  extends Activity {
         String uname = username.getText().toString();
         String pass = password.getText().toString();
 
-        callLoginApi(uname, pass);
+        int statusCode = callLoginApi(uname, pass);
 
-//        Intent intent = new Intent(getApplicationContext(),ConductorActivity.class);
-//        startActivity(intent);
+        if(statusCode==200){
+            Intent intent = new Intent(getApplicationContext(),ConductorActivity.class);
+            startActivity(intent);
+        }
+        else{
+            displayLoginFailPopUp();
+        }
 
     }
 
-    private void callLoginApi(String username, String password) {
+    private void displayLoginFailPopUp() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle("Authentication Failed");
+        dialog.setMessage("You May have entered Invalid Credentials");
+        dialog.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
-        String url =  "http://192.168.1.4:8080/Sample/api/login?username="+username+"&password="+password;
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    private int callLoginApi(String username, String password) {
+
+        String url =  "http://172.16.171.212:8080/Sample/api/login?username="+username+"&password="+password;
         HttpClient client = new DefaultHttpClient();
         HttpGet get = new HttpGet(url);
         HttpResponse response = null;
@@ -68,6 +89,7 @@ public class LoginActivity  extends Activity {
 
         Log.v("response = ", response.toString());
         Log.v("code = " , String.valueOf(statuscode));
+        return statuscode;
     }
 
 
