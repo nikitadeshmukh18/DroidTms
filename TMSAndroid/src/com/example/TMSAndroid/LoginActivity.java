@@ -67,7 +67,7 @@ public class LoginActivity  extends Activity {
 
     private int callLoginApi(String username, String password) {
 
-        String url =  "http://172.16.171.211:8080/Sample/api/login?username="+username+"&password="+password;
+        String url =  "http://172.16.171.215:8080/Sample/api/login?username="+username+"&password="+password;
         HttpClient client = new DefaultHttpClient();
         HttpGet get = new HttpGet(url);
         HttpResponse response = null;

@@ -50,7 +50,7 @@ public class ConductorActivity extends Activity implements LogOutManager , Adapt
 
         displayBusListInComboBox(busList);
 
-    }
+}
 
     private void displayBusListInComboBox(List<Bus> busList) {
 
@@ -85,7 +85,7 @@ public class ConductorActivity extends Activity implements LogOutManager , Adapt
     }
 
     public List<Bus> getBusContent() throws IOException, ParserConfigurationException, SAXException {
-        String url =  "http://172.16.171.211:8080/Sample/api/buses";
+        String url =  "http://172.16.171.215:8080/Sample/api/buses";
         HttpClient client = new DefaultHttpClient();
         HttpGet get = new HttpGet(url);
         HttpResponse response = client.execute(get);
