@@ -4,7 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.sax.Element;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import model.Bus;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -22,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class ConductorActivity extends Activity implements LogOutManager{
+public class ConductorActivity extends Activity implements LogOutManager , AdapterView.OnItemSelectedListener{
 
     List<Bus> busList;
 
@@ -51,6 +55,19 @@ public class ConductorActivity extends Activity implements LogOutManager{
     private void displayBusListInComboBox(List<Bus> busList) {
 
         Iterator iterator = busList.iterator();
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);
+
+        List<String> busNoList=new ArrayList<String>();
+        while(iterator.hasNext())
+        {
+            busNoList.add(Integer.toString(((Bus) iterator.next()).getBusNo()));
+        }
+        ArrayAdapter<String> spinnerAdapter= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,busNoList);
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinner.setAdapter(spinnerAdapter);
+
 
     }
 
@@ -68,7 +85,7 @@ public class ConductorActivity extends Activity implements LogOutManager{
     }
 
     public List<Bus> getBusContent() throws IOException, ParserConfigurationException, SAXException {
-        String url =  "http://172.16.171.212:8080/Sample/api/buses";
+        String url =  "http://172.16.171.211:8080/Sample/api/buses";
         HttpClient client = new DefaultHttpClient();
         HttpGet get = new HttpGet(url);
         HttpResponse response = client.execute(get);
@@ -91,9 +108,9 @@ public class ConductorActivity extends Activity implements LogOutManager{
             Bus bus = new Bus();
             Iterator iterator = busObject.iterator();
             bus.setBusDestination((String) iterator.next());
-            bus.setBusNo((Integer) iterator.next());
+            bus.setBusNo(Integer.parseInt((String) iterator.next()));
             bus.setBusSource((String) iterator.next());
-            bus.setRouteId((Integer) iterator.next());
+            bus.setRouteId(Integer.parseInt((String) iterator.next()));
             bus.setStartTime((String) iterator.next());
             busList.add(bus);
 
@@ -102,4 +119,29 @@ public class ConductorActivity extends Activity implements LogOutManager{
        return busList;
     }
 
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+       String busNo = (String) adapterView.getItemAtPosition(position);
+       Iterator iterator = busList.iterator();
+       Bus selectedBus = null;
+       while (iterator.hasNext()){
+           Bus bus = (Bus) iterator.next();
+           if (bus.getBusNo() == Integer.parseInt(busNo)) {
+               selectedBus = bus;
+               break;
+           }
+       }
+
+       displayBusInfo(selectedBus);
+
+    }
+
+    private void displayBusInfo(Bus selectedBus) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
 }

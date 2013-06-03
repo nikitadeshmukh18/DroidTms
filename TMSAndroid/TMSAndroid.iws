@@ -34,7 +34,7 @@
     <file path="/fragment.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370170908958" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369567877947" ignored="false" />
     <file path="/a.xml" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369563922641" ignored="false" />
-    <file path="/ConductorActivity.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370171847518" ignored="false" />
+    <file path="/ConductorActivity.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370194909182" ignored="false" />
     <file path="/BusController.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369568051753" ignored="false" />
     <file path="/LogOutManager.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369567605073" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/orteroid/res/values/strings.xml" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369733001771" ignored="false" />
@@ -44,11 +44,12 @@
     <file path="$USER_HOME$/IdeaProjects/orteroid/gen/com/example/orteroid/BuildConfig.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369733477044" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/orteroid/gen/com/example/orteroid/Manifest.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369733477552" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/orteroid/src/com/thoughtworks/orteroid/activities/AddIdeaActivity.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1369733640793" ignored="false" />
-    <file path="$PROJECT_DIR$/../../TMS/TMS/src/main/java/com/sample/controller/ApiController.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370160262528" ignored="false" />
+    <file path="$PROJECT_DIR$/../../TMS/TMS/src/main/java/com/sample/controller/ApiController.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370194525368" ignored="false" />
     <file path="/ApiController.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370160223535" ignored="false" />
     <file path="$PROJECT_DIR$/../../TMS/TMS/src/main/java/exceptions/LoginFailException.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370159837297" ignored="false" />
     <file path="/LoginFailException.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370159819515" ignored="false" />
     <file path="/Bus.java" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370160881344" ignored="false" />
+    <file path="$PROJECT_DIR$/../../TMS/TMS/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" changelist="71c647d7-da21-471d-902c-9ca9908c3922" time="1370194525368" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,10 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conductor.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="conductor.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/conductor.xml">
           <provider editor-type-id="text-editor">
-            <state line="30" column="2" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0">
+            <state line="30" column="2" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,8 +154,9 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/TMSAndroid/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="82" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.0">
+            <state line="69" column="44" selection-start="2196" selection-end="2196" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="e#1885#2052#0" expanded="true" />
                 <element signature="e#2041#2042#0" expanded="true" />
               </folding>
             </state>
@@ -170,13 +172,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConductorActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ConductorActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/TMSAndroid/ConductorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="7" selection-start="1478" selection-end="1478" vertical-scroll-proportion="-1.2193878">
+            <state line="139" column="8" selection-start="4695" selection-end="4695" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2628#2636#0" expanded="true" />
+                <element signature="e#1800#1808#0" expanded="true" />
+                <element signature="e#2008#2016#0" expanded="true" />
+                <element signature="e#3362#3370#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,15 +202,15 @@
         <option value="$PROJECT_DIR$/src/utility/LogOutManager.java" />
         <option value="$PROJECT_DIR$/src/com/example/TMSAndroid/BusController.java" />
         <option value="$PROJECT_DIR$/res/layout/controller.xml" />
-        <option value="$PROJECT_DIR$/res/layout/conductor.xml" />
         <option value="$PROJECT_DIR$/res/layout/manager.xml" />
         <option value="$PROJECT_DIR$/src/com/example/TMSAndroid/BusManager.java" />
         <option value="$PROJECT_DIR$/res/layout/login.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/TMSAndroid/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/model/BusList.java" />
         <option value="$PROJECT_DIR$/src/model/Bus.java" />
+        <option value="$PROJECT_DIR$/src/com/example/TMSAndroid/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/TMSAndroid/ConductorActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/conductor.xml" />
       </list>
     </option>
   </component>
@@ -595,30 +599,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="819" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15997131" sideWeight="0.6008584" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19296987" sideWeight="0.6008584" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15997131" sideWeight="0.7439199" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19296987" sideWeight="0.7439199" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28678304" sideWeight="0.4964132" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4892704" sideWeight="0.4985653" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25608012" sideWeight="0.4985653" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.6008584" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.7439199" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3876967" sideWeight="0.6284075" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6709585" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -783,20 +787,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/conductor.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="30" column="2" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TMSAndroid/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="82" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.0">
+        <state line="69" column="44" selection-start="2196" selection-end="2196" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="e#1885#2052#0" expanded="true" />
             <element signature="e#2041#2042#0" expanded="true" />
           </folding>
         </state>
@@ -804,11 +799,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TMSAndroid/ConductorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="7" selection-start="1478" selection-end="1478" vertical-scroll-proportion="-1.2193878">
+        <state line="139" column="8" selection-start="4695" selection-end="4695" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2628#2636#0" expanded="true" />
+            <element signature="e#1800#1808#0" expanded="true" />
+            <element signature="e#2008#2016#0" expanded="true" />
+            <element signature="e#3362#3370#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/conductor.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="30" column="2" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
